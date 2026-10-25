@@ -1,21 +1,32 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-const year = document.getElementById('year');
+# Baj_Antix
 
-if (year) {
-  year.textContent = new Date().getFullYear();
-}
+موقع تجاري احترافي يقدم خدمات تصميم المواقع، تطوير المشاريع الرقمية، التسويق الإلكتروني، واستشارات النمو الرقمي.
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(isOpen));
-  });
+## التشغيل
 
-  navLinks.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-}
+- افتح ملف `index.html` مباشرة في المتصفح، أو
+- استخدم أي خادم محلي بسيط مثل:
+
+```bash
+python -m http.server 8000
+```
+
+ثم افتح العنوان التالي في المتصفح:
+
+```text
+http://localhost:8000
+```
+
+## المميزات
+
+- تصميم متجاوب للجوال والجهاز اللوحي والسطح المكتب
+- واجهة عربية RTL
+- شريط تنقل متجاوب
+- أقسام احترافية: الرئيسية، من نحن، الخدمات، المزايا، التواصل
+- أزرار وتفاعلات بسيطة وسريعة
+
+## التقنية
+
+- HTML
+- CSS
+- JavaScript
